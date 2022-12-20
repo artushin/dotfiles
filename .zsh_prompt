@@ -1,0 +1,13 @@
+parse_git_dirty() {
+	[[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo "*"
+}
+
+parse_git_branch() {
+	if [[ -n $(git branch 2> /dev/null) ]]
+	then
+		git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/" | (echo -n "%F{237}on %F{141}" && cat)
+	fi
+}
+
+NEWLINE=$'\n'
+PS1='%F{9}%n %F{237}at %F{172}%M %F{237}in %F{4}%~ $(parse_git_branch) %f${NEWLINE}%~# '

@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+# Set PATH
+export PATH=$PATH:/Users/artushin/go/bin
+export PATH=$PATH:$HOME/bin
+export PATH=":$PATH::/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH=$PATH:/Users/artushin/.bin
 
 # Make vim the default editor.
 export EDITOR='vim';
@@ -26,12 +30,40 @@ export LC_ALL='en_US.UTF-8';
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
 
-# Don’t clear the screen after quitting a manual page.
-export MANPAGER='less -X';
-
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
-# Hide the “default interactive shell is now zsh” warning on macOS.
-export BASH_SILENCE_DEPRECATION_WARNING=1;
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
+
+# Link Homebrew casks in `/Applications` rather than `~/Applications`
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Android
+export ANDROID_HOME=/Users/artushin/Library/Android/sdk/
+
+# Keybase
+export KEYBASE_BASEPATH="/Volumes/Keybase"
+
+# Kubernetes
+export KUBECONFIG="KUBECONFIG:$HOME/.kube/config"
+export KUBECONFIG="KUBECONFIG:$HOME/.kube/onprem.kubeconfig"
+export KUBECONFIG="KUBECONFIG:$HOME/.kube/helm.kubeconfig"
+export KUBECONFIG="KUBECONFIG:$HOME/.kube/cw.kubeconfig"
+
+# Helm
+export XDG_CACHE_HOME=$HOME/.helm3/cache
+export XDG_CONFIG_HOME=$HOME/.helm3/config
+export XDG_DATA_HOME=$HOME/.helm3/data
+
+# Golang
+export GOBIN=/Users/artushin/go/bin
+
+# Lively
+# export VAULT_TOKEN=s.B8rx9gvpqIGRNrTrpAfxS4pu
+export VAULT_ADDR=https://vault.livelyvideo.tv
+export GOPRIVATE=github.com/LivelyVideo/*
