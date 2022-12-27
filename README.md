@@ -9,9 +9,9 @@
 - Spotify
 - VSCode
 - Docker
-- iTerm
+- iTerm (import in Settings > Profiles from iterm/Profile.json)
 - Golang
-- Brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && ./brew.sh`
+- Brew (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && ./brew.sh`)
 
 ### Using Git and the bootstrap script
 
