@@ -27,12 +27,6 @@ To update, `cd` into your local `dotfiles` repository and then:
 source bootstrap.sh
 ```
 
-Alternatively, to update while avoiding the confirmation prompt:
-
-```bash
-set -- -f; source bootstrap.sh
-```
-
 ### Git-free install
 
 To install these dotfiles without Git or OSX specific stuff (for ssh):
