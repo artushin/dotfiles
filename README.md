@@ -11,6 +11,7 @@
 - Docker
 - iTerm (import in Settings > Profiles from iterm/Profile.json)
 - Golang
+- Github CLI
 - Brew (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && ./brew.sh`)
 
 ### Using Git and the bootstrap script
