@@ -24,6 +24,8 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install zsh completions.
 brew install zsh-completions
+# fix insecure dirs https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories
+compaudit | xargs chmod g-w
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
