@@ -37,7 +37,7 @@ export ANDROID_HOME=/Users/artushin/Library/Android/sdk/
 export KEYBASE_BASEPATH="/Volumes/Keybase"
 
 # Kubernetes
-export KUBECONFIG="$KUBECONFIG:$HOME/.kube/config"
+export KUBECONFIG="$HOME/.kube/config"
 export KUBECONFIG="$KUBECONFIG:$HOME/.kube/onprem.kubeconfig"
 export KUBECONFIG="$KUBECONFIG:$HOME/.kube/helm.kubeconfig"
 export KUBECONFIG="$KUBECONFIG:$HOME/.kube/cw.kubeconfig"
