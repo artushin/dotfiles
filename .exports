@@ -54,3 +54,6 @@ export GOBIN=/Users/artushin/go/bin
 # export VAULT_TOKEN=s.B8rx9gvpqIGRNrTrpAfxS4pu
 export VAULT_ADDR=https://vault.livelyvideo.tv
 export GOPRIVATE=github.com/LivelyVideo/*
+
+# for gpg key signing
+GPG_TTY=$(tty)
