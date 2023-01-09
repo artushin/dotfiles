@@ -127,7 +127,8 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	# eh, don't care. Disabling.
+	gpgsign = false
 
 [diff]
 
